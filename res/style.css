@@ -1,0 +1,436 @@
+@font-face {
+  font-family: LiberationMono;
+  src: url("https://cdn.afneville.com/fonts/LiberationMono-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: LiberationMono;
+  src: url("https://cdn.afneville.com/fonts/LiberationMono-Italic.ttf") format("truetype");
+  font-style: italic;
+}
+@font-face {
+  font-family: LiberationMono;
+  src: url("https://cdn.afneville.com/fonts/LiberationMono-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: LiberationMono;
+  src: url("https://cdn.afneville.com/fonts/LiberationMono-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: LiberationSans;
+  src: url("https://cdn.afneville.com/fonts/LiberationSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: LiberationSans;
+  src: url("https://cdn.afneville.com/fonts/LiberationSans-Italic.ttf") format("truetype");
+  font-style: italic;
+}
+@font-face {
+  font-family: LiberationSans;
+  src: url("https://cdn.afneville.com/fonts/LiberationSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: LiberationSans;
+  src: url("https://cdn.afneville.com/fonts/LiberationSans-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: LiberationSerif;
+  src: url("https://cdn.afneville.com/fonts/LiberationSerif-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: LiberationSerif;
+  src: url("https://cdn.afneville.com/fonts/LiberationSerif-Italic.ttf") format("truetype");
+  font-style: italic;
+}
+@font-face {
+  font-family: LiberationSerif;
+  src: url("https://cdn.afneville.com/fonts/LiberationSerif-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: LiberationSerif;
+  src: url("https://cdn.afneville.com/fonts/LiberationSerif-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: IBMPlexMono;
+  src: url("https://cdn.afneville.com/fonts/IBMPlexMono-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: IBMPlexMono;
+  src: url("https://cdn.afneville.com/fonts/IBMPlexMono-Italic.ttf") format("truetype");
+  font-style: italic;
+}
+@font-face {
+  font-family: IBMPlexMono;
+  src: url("https://cdn.afneville.com/fonts/IBMPlexMono-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: IBMPlexMono;
+  src: url("https://cdn.afneville.com/fonts/IBMPlexMono-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: IBMPlexSans;
+  src: url("https://cdn.afneville.com/fonts/IBMPlexSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: IBMPlexSans;
+  src: url("https://cdn.afneville.com/fonts/IBMPlexSans-Italic.ttf") format("truetype");
+  font-style: italic;
+}
+@font-face {
+  font-family: IBMPlexSans;
+  src: url("https://cdn.afneville.com/fonts/IBMPlexSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: IBMPlexSans;
+  src: url("https://cdn.afneville.com/fonts/IBMPlexSans-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: IBMPlexSerif;
+  src: url("https://cdn.afneville.com/fonts/IBMPlexSerif-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: IBMPlexSerif;
+  src: url("https://cdn.afneville.com/fonts/IBMPlexSerif-Italic.ttf") format("truetype");
+  font-style: italic;
+}
+@font-face {
+  font-family: IBMPlexSerif;
+  src: url("https://cdn.afneville.com/fonts/IBMPlexSerif-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: IBMPlexSerif;
+  src: url("https://cdn.afneville.com/fonts/IBMPlexSerif-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+:root.light-theme,
+:root.system-theme {
+  --fg-main: #000000;
+  --fg-secondary: #656e77;
+  --bg-emphasis: #d9d9d9;
+  --bg-secondary: #f6f6f6;
+  --bg-main: #ffffff;
+  --accent: #015692;
+}
+
+:root.dark-theme {
+  --fg-main: #ffffff;
+  --fg-secondary: #d6d6d6;
+  --bg-emphasis: #333333;
+  --bg-secondary: #1c1b1b;
+  --bg-main: #101010;
+  --accent: #88aece;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root.system-theme {
+    --fg-main: #ffffff;
+    --fg-secondary: #d6d6d6;
+    --bg-emphasis: #333333;
+    --bg-secondary: #1c1b1b;
+    --bg-main: #101010;
+    --accent: #88aece;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: IBMPlexSans;
+  background-color: var(--bg-main);
+  color: var(--fg-main);
+}
+
+.content-width {
+  padding-inline: 1rem;
+  width: calc(100% - 2rem);
+  max-width: 75ch;
+  margin-inline: auto;
+}
+
+.copy-code {
+  border: 1px solid var(--bg-emphasis);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+.copy-code .mono {
+  border: none;
+  margin: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-inline: 0.5rem;
+  font-family: IBMPlexMono;
+  font-size: 0.875rem;
+  max-width: 100%;
+  overflow-x: auto;
+  flex-shrink: 1;
+}
+.copy-code .mono a:link {
+  color: inherit;
+  text-decoration: none;
+}
+.copy-code .mono a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+.copy-code .mono a:hover {
+  text-decoration: none;
+}
+.copy-code .mono a:active {
+  text-decoration: none;
+}
+@media (hover: hover) {
+  .copy-code .mono a:hover {
+    text-decoration: underline;
+  }
+  .copy-code .mono a:active {
+    text-decoration: underline;
+  }
+}
+.copy-code button {
+  display: relative;
+  border: none;
+  background-color: var(--bg-secondary);
+  border-left: 1px solid var(--bg-emphasis);
+  padding: 0.5rem;
+  padding-inline: 0.75rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.copy-code button i {
+  font-size: 1rem;
+  color: var(--fg-secondary);
+}
+.copy-code button p {
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+@media (hover: hover) {
+  .copy-code button:hover {
+    background-color: var(--bg-emphasis);
+  }
+}
+.copy-code button:active {
+  background-color: var(--bg-emphasis);
+}
+@media (hover: no) {
+  .copy-code button:active {
+    background-color: var(--bg-emphasis);
+  }
+  .copy-code button:focus {
+    background-color: var(--bg-emphasis);
+  }
+}
+
+.horizontal-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.link-button {
+  border-radius: 0.25rem;
+  overflow: hidden;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--bg-secondary);
+  padding: 0.5rem;
+  padding-top: calc(0.5rem - 1px);
+  padding-bottom: calc(0.5rem - 1px);
+  border-radius: 0.5rem;
+  border: 1px solid var(--bg-emphasis);
+}
+.link-button span,
+.link-button button,
+.link-button a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.link-button p {
+  margin: 0;
+}
+.link-button i,
+.link-button p {
+  pointer-events: none;
+  z-index: 2;
+}
+.link-button button {
+  z-index: 1;
+}
+.link-button button span {
+  z-index: 2;
+}
+
+@media (hover: hover) {
+  .link-button:hover {
+    background-color: var(--bg-emphasis);
+  }
+  .accent-hover:hover i {
+    color: var(--fg-secondary) !important;
+  }
+}
+.link-button:active {
+  background-color: var(--bg-emphasis);
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid var(--bg-emphasis);
+  padding: 0;
+}
+
+#pfp {
+  max-width: 100%;
+  width: 200px;
+  margin-inline: auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+#pfp img {
+  border-radius: 50%;
+  border: 1px solid var(--bg-emphasis);
+  width: 100%;
+}
+
+main {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#key-fingerprint {
+  margin-bottom: 1rem;
+}
+
+#other-links .horizontal-links {
+  margin-bottom: 1rem;
+}
+
+header hr {
+  margin: 0;
+}
+header button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: inherit;
+}
+header button div {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+}
+header button i {
+  font-size: 1.5rem;
+}
+header .link-button {
+  display: flex;
+  border-radius: initial;
+  background-color: var(--bg-main);
+  border: none;
+}
+@media (hover: hover) {
+  header .link-button:hover {
+    background-color: var(--bg-secondary);
+  }
+  header button:hover {
+    color: var(--fg-secondary);
+  }
+}
+header .link-button:active {
+  background-color: var(--bg-secondary);
+}
+header #theme-dropdown-container {
+  position: relative;
+}
+header #theme-dropdown-container i {
+  color: var(--fg-main);
+}
+header #theme-dropdown-container .dropdown-menu {
+  right: 0;
+  display: none;
+  border-radius: 0.5rem;
+  border: 1px solid var(--bg-emphasis);
+  overflow: hidden;
+  position: absolute;
+}
+header #theme-dropdown-container .dropdown-menu .link-button {
+  padding-inline: 1rem;
+}
+
+#header-components {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#site-banner {
+  padding: 0;
+  color: var(--fg-main);
+}
+#site-banner img {
+  border-radius: 0.25rem;
+  height: 2rem;
+}
+
+#site-banner:active p {
+  color: var(--fg-secondary);
+}
+
+@media (hover: hover) {
+  #site-banner {
+    background-color: var(--bg-main);
+  }
+  #site-banner:hover p {
+    color: var(--fg-secondary);
+  }
+}
+@media (max-width: 200px) {
+  #site-banner p {
+    display: none;
+  }
+}
+#greeting {
+  display: flex;
+  justify-content: space-around;
+}
+#greeting #greeting-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--fg-secondary);
+}
+#greeting #greeting-content p {
+  font-style: italic;
+}
+
+/*# sourceMappingURL=style.css.map */

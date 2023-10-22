@@ -1,0 +1,239 @@
+@font-face {
+  font-family: LiberationMono;
+  src: url("https://cdn.afneville.com/fonts/LiberationMono-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: LiberationMono;
+  src: url("https://cdn.afneville.com/fonts/LiberationMono-Italic.ttf") format("truetype");
+  font-style: italic;
+}
+@font-face {
+  font-family: LiberationMono;
+  src: url("https://cdn.afneville.com/fonts/LiberationMono-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: LiberationMono;
+  src: url("https://cdn.afneville.com/fonts/LiberationMono-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: LiberationSans;
+  src: url("https://cdn.afneville.com/fonts/LiberationSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: LiberationSans;
+  src: url("https://cdn.afneville.com/fonts/LiberationSans-Italic.ttf") format("truetype");
+  font-style: italic;
+}
+@font-face {
+  font-family: LiberationSans;
+  src: url("https://cdn.afneville.com/fonts/LiberationSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: LiberationSans;
+  src: url("https://cdn.afneville.com/fonts/LiberationSans-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: LiberationSerif;
+  src: url("https://cdn.afneville.com/fonts/LiberationSerif-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: LiberationSerif;
+  src: url("https://cdn.afneville.com/fonts/LiberationSerif-Italic.ttf") format("truetype");
+  font-style: italic;
+}
+@font-face {
+  font-family: LiberationSerif;
+  src: url("https://cdn.afneville.com/fonts/LiberationSerif-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: LiberationSerif;
+  src: url("https://cdn.afneville.com/fonts/LiberationSerif-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: IBMPlexMono;
+  src: url("https://cdn.afneville.com/fonts/IBMPlexMono-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: IBMPlexMono;
+  src: url("https://cdn.afneville.com/fonts/IBMPlexMono-Italic.ttf") format("truetype");
+  font-style: italic;
+}
+@font-face {
+  font-family: IBMPlexMono;
+  src: url("https://cdn.afneville.com/fonts/IBMPlexMono-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: IBMPlexMono;
+  src: url("https://cdn.afneville.com/fonts/IBMPlexMono-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: IBMPlexSans;
+  src: url("https://cdn.afneville.com/fonts/IBMPlexSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: IBMPlexSans;
+  src: url("https://cdn.afneville.com/fonts/IBMPlexSans-Italic.ttf") format("truetype");
+  font-style: italic;
+}
+@font-face {
+  font-family: IBMPlexSans;
+  src: url("https://cdn.afneville.com/fonts/IBMPlexSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: IBMPlexSans;
+  src: url("https://cdn.afneville.com/fonts/IBMPlexSans-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: IBMPlexSerif;
+  src: url("https://cdn.afneville.com/fonts/IBMPlexSerif-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: IBMPlexSerif;
+  src: url("https://cdn.afneville.com/fonts/IBMPlexSerif-Italic.ttf") format("truetype");
+  font-style: italic;
+}
+@font-face {
+  font-family: IBMPlexSerif;
+  src: url("https://cdn.afneville.com/fonts/IBMPlexSerif-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: IBMPlexSerif;
+  src: url("https://cdn.afneville.com/fonts/IBMPlexSerif-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+:root.light-theme,
+:root.system-theme {
+  --fg-main: #000000;
+  --fg-secondary: #656e77;
+  --bg-emphasis: #d9d9d9;
+  --bg-secondary: #f6f6f6;
+  --bg-main: #ffffff;
+  --accent: #015692;
+}
+
+:root.dark-theme {
+  --fg-main: #ffffff;
+  --fg-secondary: #d6d6d6;
+  --bg-emphasis: #333333;
+  --bg-secondary: #1c1b1b;
+  --bg-main: #101010;
+  --accent: #88aece;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root.system-theme {
+    --fg-main: #ffffff;
+    --fg-secondary: #d6d6d6;
+    --bg-emphasis: #333333;
+    --bg-secondary: #1c1b1b;
+    --bg-main: #101010;
+    --accent: #88aece;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: IBMPlexSans;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  color: var(--fg-main);
+  background-color: var(--bg-main);
+}
+
+a:link,
+a:visited {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:active,
+a:hover {
+  text-decoration: none;
+}
+
+.content-width {
+  padding-inline: 1rem;
+  width: calc(100% - 2rem);
+  max-width: 80ch;
+  margin-inline: auto;
+}
+
+#grid {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 1rem;
+}
+#grid section {
+  border: 1px solid var(--bg-emphasis);
+  border-radius: 0.5rem;
+}
+#grid hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid var(--bg-emphasis);
+  padding: 0;
+}
+#grid h3 {
+  margin: 0.5rem;
+}
+#grid ul {
+  margin-inline: 0.5rem;
+  padding: 0;
+}
+#grid li {
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  overflow: clip;
+}
+#grid li i {
+  width: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+#grid li p {
+  margin: 0;
+}
+#grid li a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media (hover: hover) {
+  #grid li:hover {
+    background-color: var(--bg-secondary);
+  }
+}
+
+/*# sourceMappingURL=start.css.map */
